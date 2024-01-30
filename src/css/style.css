@@ -21,7 +21,7 @@ body div{
 #text-area{
   display: flex;
   border: none;
-  height: 90%;
+  height: 90vh;
   width: 66%;
   margin-right: 2rem;
 }
@@ -29,8 +29,9 @@ body div{
 #text-area form{
   display: flex;
   flex-direction: column;
+  height: 100%;
   width: 100%;
-  align-content: space-between;
+  justify-content: space-between;
 }
 
 #text{
@@ -49,6 +50,10 @@ body div{
 
 #text:active{
   border: none;
+}
+
+textarea::placeholder {
+  color: #0A3871;
 }
 
 .legend{
@@ -85,11 +90,10 @@ body div{
 
 #text-result{
   background-color: #FFFFFF;
-  height: 90%;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  border-radius: 2em;
   height: 90vh;
   width: 33vw;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 2em;
 }
 
 .button-clean{
@@ -109,16 +113,16 @@ body div{
   display: none;
   padding: 1rem;
   height: 98%;
+  width: 98%;
   flex-direction: column;
   justify-content: space-between; 
   align-items: center;
 }
-#graph-text textarea{
-  width: 90rem;
-}
 
-textarea::placeholder {
-  color: #0A3871;
+#graph-text p {
+  width: 92%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 #graph-ilustration{
