@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./img/Logo-A.svg" />
+
     <title>Decodificador de texto</title>
+
+    <link rel="icon" type="image/x-icon" href="./img/Logo-A.svg" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -13,15 +17,15 @@
     <section id="text-area">
       <form>
         <div>
-          <input id="text" aria-label="Digite aqui o texto" />
+          <input id="text" aria-label="Digite aqui o texto" value="Digite aqui o texto" />
         </div>
         <div>
           <img src="./img/alert.svg" />
           <p>Apenas letras minúsculas e sem acento.</p>
         </div>
         <div class="buttons">
-          <button type="submit">Criptografar</button>
-          <button type="submit">Descriptografar</button>
+          <button type="button">Criptografar</button>
+          <button type="button">Descriptografar</button>
         </div>
       </form>
     </section>
