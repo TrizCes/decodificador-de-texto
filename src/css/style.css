@@ -120,7 +120,7 @@ body div{
 }
 
 #graph-ilustration h4{
-  color: #343A40;
+  color: #0A3871;
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -141,4 +141,43 @@ body div{
     position: relative;
     bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer div {
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+}
+
+.footer div img {
+  width: 8rem;
+}
+
+#dados{
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+  font-weight: bold;
+}
+
+#socialmidia{
+  flex-direction: column;
+  width: 33%;
+  align-items: self-start;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#socialmidia img{
+  width: 4rem;
+}
+
+#socialmidia div{
+  display: flex;
+  flex-direction: row;
+  width: 99%;
+  justify-content: space-between;
 }
