@@ -1,5 +1,4 @@
 // Aplicando dinamicidade e funções ao app
-
 const text = document.getElementById('text');
 const encrypt = document.getElementById('encrypt');
 const decrypt = document.getElementById('decrypt');
@@ -12,8 +11,6 @@ const showNewText = (t) => {
   newText.innerHTML = t;
   copyButton.innerText = 'Copiar';
 };
-
-const decryptText = (t) => {};
 
 encrypt.addEventListener('click', (event) => {
   event.preventDefault();
