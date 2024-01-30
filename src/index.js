@@ -1,8 +1,8 @@
 // Aplicando dinamicidade e funções ao app
 
 const text = document.getElementById('text');
-const criptograph = document.getElementById('cript');
-const descript = document.getElementById('descript');
+const encrypt = document.getElementById('encrypt');
+const decrypt = document.getElementById('decrypt');
 const newText = document.getElementById('newtext');
 const copyButton = document.getElementById('copybutton');
 const ilustration = document.getElementById('graph-ilustration');
@@ -10,10 +10,12 @@ const graphText = document.getElementById('graph-text');
 
 const showNewText = (t) => {
   newText.innerHTML = t;
-  copyButton.innerText = "Copiar";
+  copyButton.innerText = 'Copiar';
 };
 
-criptograph.addEventListener('click', (event) => {
+const decryptText = (t) => {};
+
+encrypt.addEventListener('click', (event) => {
   event.preventDefault();
 
   const textIn = text.value;
@@ -47,9 +49,29 @@ criptograph.addEventListener('click', (event) => {
 copyButton.addEventListener('click', (event) => {
   event.preventDefault();
 
-  const copyText = newText.innerHTML ;
+  const copyText = newText.innerHTML;
 
   navigator.clipboard.writeText(copyText);
 
-  copyButton.innerText = "Copiado!"
+  copyButton.innerText = 'Copiado!';
+});
+
+decrypt.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  const textIn = text.value;
+
+  var textDecrypt = textIn.replace(new RegExp('enter', 'g'), 'e');
+  textDecrypt = textDecrypt.replace(new RegExp('imes', 'g'), 'i');
+  textDecrypt = textDecrypt.replace(new RegExp('ai', 'g'), 'a');
+  textDecrypt = textDecrypt.replace(new RegExp('ober', 'g'), 'o');
+  textDecrypt = textDecrypt.replace(new RegExp('ufat', 'g'), 'u');
+
+  if (textDecrypt.length > 0) {
+    ilustration.style.display = 'none';
+
+    showNewText(textDecrypt);
+
+    graphText.style.display = 'flex';
+  }
 });
