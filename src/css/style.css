@@ -1,8 +1,144 @@
+body{
+  background: #F3F5FC;
+  display: flex;
+  flex-direction: column;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body header{
+  margin-right: 4%;
+}
+
+body div{
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+}
+
+#text-area{
+  display: flex;
+  border: none;
+  height: 90%;
+  width: 66%;
+  margin-right: 2rem;
+}
+
+#text-area form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: space-between;
+}
+
 #text{
+  display: flex;
+  height: 60vh;
+  width: 100%;
+  text-align: start;
   border: none;
   color: var(--Dark-blue-dark-blue-300, #0A3871);
+  background-color: transparent; 
   font-family: Inter;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
+}
+
+#text:active{
+  border: none;
+}
+
+.legend{
+  color: #333;
+  gap: 4px;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#button-blue{
+  border-radius: 2em;
+  border: 1px solid #0A3871;
+  background-color: #0A3871;
+  color: #FFFFFF;
+  display: flex;
+  width: 18rem;
+  padding: 2em;
+  align-items: center;
+  gap: 6em;
+  text-align: center;
+  justify-content: center;
+}
+
+#text-result{
+  background-color: #FFFFFF;
+  height: 90%;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 2em;
+  height: 90vh;
+  width: 33vw;
+}
+
+#button-clean{
+  border-radius: 2em;
+  border: 1px solid  #0A3871;
+  display: flex;
+  width: 18rem;
+  padding: 2em;
+  align-items: center;
+  gap: 6em;
+  text-align: center;
+  justify-content: center;
+}
+
+#graph-text {
+  display: none; 
+}
+
+#graph-ilustration{
+  display: flex;
+  height: 95%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+
+#graph-ilustration img{
+  margin-bottom: 4rem;
+}
+
+#graph-ilustration h4{
+  color: #343A40;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+
+#graph-ilustration p{
+  color: #495057;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%; 
+}
+
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

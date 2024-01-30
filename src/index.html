@@ -11,25 +11,37 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <img src="./img/Logo-A.svg" alt="Logo" />
-    </header>
-    <section id="text-area">
-      <form>
-        <div>
-          <input id="text" aria-label="Digite aqui o texto" value="Digite aqui o texto" />
+    <div>
+      <header>
+        <img src="./img/Logo-A.svg" alt="Logo" />
+      </header>
+      <section id="text-area">
+        <form>
+          <div>
+            <input id="text" aria-label="Digite aqui o texto" value="Digite aqui o texto" />
+          </div>
+          <div class="legend">
+            <img src="./img/alert.svg" />
+            <p>Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <div class="buttons">
+            <button id="button-blue" type="button">Criptografar</button>
+            <button id="button-clean" type="button">Descriptografar</button>
+          </div>
+        </form>
+      </section>
+      <section id="text-result">
+        <div id="graph-text">
+          <p></p>
+          <button id="button-clean">Copiar</button>
         </div>
-        <div>
-          <img src="./img/alert.svg" />
-          <p>Apenas letras minúsculas e sem acento.</p>
+        <div id="graph-ilustration" >
+          <img src="./img/search.svg">
+          <h4>Nenhuma mensagem encontrada</h4>
+          <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
         </div>
-        <div class="buttons">
-          <button type="button">Criptografar</button>
-          <button type="button">Descriptografar</button>
-        </div>
-      </form>
-    </section>
-    <section id="text-result"></section>
+      </section>
+    </div>
     <footer class="footer">
       <div id="dados">
         <p>Janeiro 2024</p>
@@ -37,11 +49,11 @@
       </div>
       <div id="socialmidia">
         <a href="https://www.linkedin.com/in/beatrizceschini/"
-          ><img height="40em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+          ><img height="20em" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
         /></a>
         <a href="mailto:biaceschini@gmail.com"
           ><img
-            height="40em"
+            height="20em"
             src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"
         /></a>
       </div>
