@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="./img/Logo-A.svg" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="index.js" async></script>
   </head>
   <body>
     <div>
@@ -18,23 +19,25 @@
       <section id="text-area">
         <form>
           <div>
-            <input id="text" aria-label="Digite aqui o texto" value="Digite aqui o texto" />
+            <textarea id="text" aria-label="Digite aqui o texto" placeholder="Digite aqui o texto"></textarea>
           </div>
           <div class="legend">
             <img src="./img/alert.svg" />
             <p>Apenas letras minúsculas e sem acento.</p>
           </div>
           <div class="buttons">
-            <button id="button-blue" type="button">Criptografar</button>
-            <button id="button-clean" type="button">Descriptografar</button>
+            <button id="cript" class="button-blue" type="button">Criptografar</button>
+            <button id="descript" class="button-clean" type="button">Descriptografar</button>
           </div>
         </form>
       </section>
       <section id="text-result">
+
         <div id="graph-text">
-          <p></p>
-          <button id="button-clean">Copiar</button>
+          <p id="newtext"></p>
+          <button id="copybutton" class="button-clean">Copiar</button>
         </div>
+
         <div id="graph-ilustration">
           <img src="./img/search.svg" />
           <h4>Nenhuma mensagem encontrada</h4>
