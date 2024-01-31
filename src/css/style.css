@@ -248,6 +248,11 @@ textarea::placeholder {
 
 .alert img {
   height: 80%;
+  margin: 8px 2px 2px 2px;
+}
+
+div p img { 
+  width: 33%;
 }
 
 .close {
@@ -256,4 +261,99 @@ textarea::placeholder {
   right: 10px;
   font-size: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  body header{
+    display: none;
+  }
+
+  body div{
+    flex-direction: column;
+    gap: 0.2rem;
+    height: max-content;
+    width: 98.5vw;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #text-area{
+    display: flex;
+    border: none;
+    height: 95vh;
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+
+  #text-area div {
+    padding: 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    margin-top: 0.5rem;
+    padding-right: 0px;
+    padding-left: 0px;
+    gap: 1rem;
+  }
+
+  #text-result{
+    background-color: #FFFFFF;
+    height: max-content;
+    width: 100%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 2em;
+  }
+
+  #graph-ilustration {
+    width: 98%;
+    align-items: center;
+    padding: 2px;
+  }
+
+  #graph-ilustration img {
+    width: 95%;
+    margin: 2px;
+  }
+
+  #graph-text p{
+    font-size: 18px;
+    margin: 8px 0 8px 0;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    padding: 2px;
+    height: 20vh;
+  } 
+
+  .footer div {
+    padding: 0;
+  }
+
+  #dados {
+    padding: 16px 0 16px 0;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  #socialmidia div{
+    flex-direction: column;
+  }
+
+  #socialmidia  img{
+    width: 1.65rem;
+  }
+
+  .alert img {
+    margin: 2px;
+    height: 65%;
+  }
+
+  div p img { 
+    width: 50%;
+    margin-bottom: 2px;
+  }
 }
