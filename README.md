@@ -26,7 +26,7 @@ Assista a aplicação em execusão clicando na imagem a seguir:
 - Faça download do repositório para o seu computador;
 - Execute o arquivo index.html no seu navegador;
 
-# Acessando o PDV publicado:
+# Acessando o projeto publicado:
 
 - É só clicar [aqui](https://trizces.github.io/decodificador-de-texto/)!
 
